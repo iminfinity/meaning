@@ -31,7 +31,7 @@ var cfgFile string
 var rootCmd = &cobra.Command{
 	Use:   "meaning",
 	Short: "Define a word",
-	Long: `Cli to get the defination of a word.
+	Long: `Cli to get the definition of a word.
 	For example: meaning hello
 
 

@@ -56,7 +56,7 @@ func init() {
 // Dictionary struct
 type Dictionary struct {
 	Word       string `json:"word,omitempty"`
-	Defination string `json:"defination,omitempty"`
+	Definition string `json:"defination,omitempty"`
 }
 
 var dictionary []Dictionary
@@ -75,7 +75,7 @@ func getMeaning(args []string) {
 	found := false
 	for _, dict := range dictionary {
 		if dict.Word == args[0] {
-			fmt.Printf("\n\t\t %s\n", dict.Defination)
+			fmt.Printf("\n\t\t %s\n", dict.Definition)
 			found = true
 			break
 		}
