@@ -20,6 +20,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
+	"strings"
 
 	"github.com/spf13/cobra"
 )
@@ -74,8 +75,8 @@ func getMeaning(args []string) {
 
 	found := false
 	for _, dict := range dictionary {
-		if dict.Word == args[0] {
-			fmt.Printf("\n\t\t %s\n", dict.Definition)
+		if strings.ToLower(dict.Word) == strings.ToLower(args[0]) {
+			fmt.Printf("\n %s\n", dict.Definition)
 			found = true
 			break
 		}
