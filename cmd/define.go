@@ -56,7 +56,7 @@ func init() {
 // Dictionary struct
 type Dictionary struct {
 	Word       string `json:"word,omitempty"`
-	Definition string `json:"defination,omitempty"`
+	Definition string `json:"definition,omitempty"`
 }
 
 var dictionary []Dictionary
